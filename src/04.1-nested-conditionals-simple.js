@@ -1,7 +1,5 @@
-function isOldEnoughToDrive(age) {
-  if (age >= 16) {
-    return "Yes"
-  } else {
-    return "No";
-  }
-}
+
+
+
+let isOldEnoughToDrive = (edad) => (edad >= 16? "Yes" : "No");
+console.log(isOldEnoughToDrive);

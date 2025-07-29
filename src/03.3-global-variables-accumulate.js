@@ -1,12 +1,12 @@
-function add(x, y) {
-  return x + y;
-}
 
-function subtract(x, y) {
-  return x - y;
-}
 
-const result = add(5, 10);
-console.log(result);
-const accumulate = add(result, 6);
-console.log(subtract(accumulate, 12));
+
+
+const add = (x,y) => x+y;
+const subtract = (x,y) => x-y;
+
+let resultado = add(5,10);
+console.log(resultado);
+
+const accumulate = add(resultado,6);
+console.log(subtract(accumulate,12));

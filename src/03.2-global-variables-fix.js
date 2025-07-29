@@ -1,14 +1,13 @@
-function add(x, y) {
-  return x + y;
-}
 
-function subtract(x, y) {
-  return x - y;
-}
+const add =(x,y) => x+y ;
+const subtract = (x,y) => x-y ;
+const accumulate = ( current,value) => current + value ;
 
-function accumulate(x) {
-  // This function is no longer possible
-}
+let result = add( 5, 10);
+console.log(result);
 
-console.log(add(5, 10));
-console.log(subtract(6, 12));
+
+result = subtract(6,12);
+result = accumulate(result,6);
+
+console.log(result);

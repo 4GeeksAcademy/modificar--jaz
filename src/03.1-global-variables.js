@@ -1,19 +1,15 @@
-let result = 0;
 
-function add(x, y) {
-  result = x + y;
-}
 
-function subtract(x, y) {
-  result = x - y;
-}
+const add = (x,y) => x +y;
+const subtract =(x,y) => x-y;
+const accumulate = (current,value) => current + value ;
 
-function accumulate(x) {
-    result += x;
-}
-
-add(5, 10);
+let result = add(5,10);
 console.log(result);
-subtract(6, 12);
-accumulate(6);
+
+
+result = subtract(6,12);
+result = accumulate(result,6);
+
+
 console.log(result);
